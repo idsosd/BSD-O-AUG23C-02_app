@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eenheden omreken oefenapp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <!-- grid opbouwen -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <!-- begin van de card -->
+            <div class="card text-center">
+                <div class="card-header">
+                  Eenheden omreken oefenapp
+                </div>
+                <div class="card-body">
+                    <select id="dim-select" class="form-select">
+                        <option selected>Kies ...</option>
+                        <option value="1">1D (lengte)</option>
+                        <option value="2">2D (oppervlakte)</option>
+                        <option value="3">3D (inhoud)</option>
+                      </select>
+                      <!-- hier weer een row met 3 cols -->
+                      <div class="row mt-2">
+                        <div class="col-5">
+                            <div class="input-group mb-3">
+                                <input id="inp_left" type="text" class="form-control" placeholder="opgave" disabled>
+                                <span class="input-group-text" id="eenh_left">mm</span>
+                              </div>
+                        </div>
+                        <div class="col-1">=</div>
+                        <div class="col-6">
+                            <div class="input-group mb-3">
+                                <input id="inp_right" type="text" class="form-control" placeholder="antwoord">
+                                <span id="eenh_right" class="input-group-text">km</span>
+                              </div>
+                        </div>
+                      </div>
+                      <!-- einde row met 3 cols-->
+                      <div class="row">
+                          <div class="col text-start">
+                            <a href="#" class="btn btn-primary" onclick="makeProblem()">Genereer</a>
+                          </div>
+                          <div class="col text-end">
+                            <a href="#" class="btn btn-success" onclick="checkSolution()">Check</a>
+                          </div>
+                      </div>  
+                </div>
+                <div class="card-footer text-body-secondary">
+                  &copy; 2023 by OSD
+                </div>
+              </div>
+            <!-- eind van de card -->
+            
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>
+    <!-- einde grid -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
