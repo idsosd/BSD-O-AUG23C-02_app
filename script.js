@@ -46,8 +46,15 @@ function checkSolution() {
     }
 
     correct_answer = toPlainString(correct_answer)
-    alert("het aantal komma verschuivingen is: " + aantal_komma_verschuivingen + " en het goede antwoord is " + correct_answer);
-
+    //alert("het aantal komma verschuivingen is: " + aantal_komma_verschuivingen + " en het goede antwoord is " + correct_answer);
+    let given_answer = document.getElementById("inp_right").value;
+    if(given_answer == correct_answer){
+        alert("Antwoord is goed!");
+    }
+    else
+    {
+        alert("Antwoord is fout!");
+    }
 
 }
 
